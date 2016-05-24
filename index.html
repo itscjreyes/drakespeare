@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Drakespeare</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
+	<!-- favicon -->
+		<link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="favicon/android-chrome-192x192.png" sizes="192x192">
+		<meta name="msapplication-square70x70logo" content="favicon/smalltile.png" />
+		<meta name="msapplication-square150x150logo" content="favicon/mediumtile.png" />
+		<meta name="msapplication-wide310x150logo" content="favicon/widetile.png" />
+		<meta name="msapplication-square310x310logo" content="favicon/largetile.png" />
+
+</head>
+<body>
+	<section class="main-container">
+		<div class="wrapper">
+			<div class="header">
+				<img src="assets/logo.png" alt="drakespeare-logo">
+				<h1>drakespeare</h1>
+				<p class="subtitle">The only placeholder text generator you will ever need.</p>
+			</div>
+			<form action="">
+				<p>What kind of text do you need?</p>
+				<input type="radio" name="textChoice" id="onlyDrake" value="onlyDrake" hidden>
+				<label for="onlyDrake">Only Drake</label>
+				<input type="radio" name="textChoice" id="mix" value="mix" hidden>
+				<label for="mix">Mix</label>
+				<input type="radio" name="textChoice" id="onlyShakespeare" value="onlyShakespeare" hidden>
+				<label for="onlyShakespeare">Only Shakespeare</label>
+				<p>How long do you want your paragraph to be?</p>
+				<input type="radio" name="sizeChoice" id="short" value="short" hidden>
+				<label for="short">Short</label>
+				<input type="radio" name="sizeChoice" id="medium" value="medium" hidden>
+				<label for="medium">Medium</label>
+				<input type="radio" name="sizeChoice" id="long" value="long" hidden>
+				<label for="long">Long</label>
+				<div>
+					<input type="submit" value="GENERATE" class="btnGen">
+				</div>
+			</form>
+			<div class="return">
+				<div class="textBox">
+					
+				</div>
+				<div class='copied'></div>
+				<button type="button" class="btn" data-clipboard-target=".textBox">COPY TEXT</button>
+			</div>
+		</div>
+	</section>
+	<section>
+		<footer>
+			<div class="wrapper">
+				<p>Designed & Developed by CJ Reyes & Kyle Leite | 2016</p>
+			</div>
+		</footer>
+	</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+</body>
+</html>
